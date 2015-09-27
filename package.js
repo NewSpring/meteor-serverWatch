@@ -1,6 +1,6 @@
 Package.describe({
   name: "bjwiley2:server-watch",
-  version: "0.0.6",
+  version: "0.0.7",
   // Brief, one-line summary of the package.
   summary: "Enables third party server pinging functionality",
   // URL to the Git repository containing the source code for this package.
@@ -11,9 +11,10 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.use("meteor-platform@1.2.2");
+  api.use("meteor-base@1.0.1");
+  api.use("mongo")
   api.use("http@1.1.0");
-  api.use("coffeescript@1.0.6");
+  api.use("coffeescript@1.0.9");
 
   api.addFiles("shared.coffee");
   api.addFiles("server.coffee", "server");
