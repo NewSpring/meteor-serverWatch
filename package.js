@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.use("meteor-base@1.0.1");
-  api.use("mongo")
+  api.use("mongo@1.1.1")
   api.use("http@1.1.0");
   api.use("coffeescript@1.0.9");
 
